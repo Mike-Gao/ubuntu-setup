@@ -124,3 +124,27 @@ sudo gedit /etc/fstab
 	</alias>
 </fontconfig>
 ```
+
+### Adding Desktop Shortcut
+
+Place `.desktop` in `~/.local/share/applications`
+```apacheconf
+[Desktop Entry]
+Name=Visual Studio Code
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/usr/bin/toolbox run -c main code --no-sandbox --unity-launch %F
+Icon=com.visualstudio.code
+Type=Application
+StartupNotify=false
+StartupWMClass=Code
+Categories=Utility;TextEditor;Development;IDE;
+MimeType=text/plain;inode/directory;
+Actions=new-empty-window;
+Keywords=vscode;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/bin/toolbox run -c main code --no-sandbox --new-window %F
+Icon=com.visualstudio.code
+```
