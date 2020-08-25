@@ -5,6 +5,13 @@
 sudo apt-get update
 sudo apt-get install dino-im vim
 sudo apt-get install language-pack-zh*
+sudo apt-get install evolution evolution-ews
+```
+#### Signal
+```
+curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+sudo apt update && sudo apt install signal-desktop
 ```
 
 ### Disable Grub Screen
