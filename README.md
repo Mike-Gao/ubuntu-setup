@@ -157,4 +157,5 @@ git config --global core.editor "subl -n -w"
 git config --global user.name "Name"
 git config --global user.email "email"
 git config --global user.signingkey 0A46826A
+git config --global commit.gpgsign true
 ```
