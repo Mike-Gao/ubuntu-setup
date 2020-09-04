@@ -154,8 +154,12 @@ Icon=com.visualstudio.code
 
 ```
 git config --global core.editor "subl -n -w"
-git config --global user.name "Name"
-git config --global user.email "email"
-git config --global user.signingkey 0A46826A
+git config --global user.name "Mike Gao"
+git config --global user.email "contact@mikegao.net"
+git config --global user.signingkey E43CFB9C6B95BE84
 git config --global commit.gpgsign true
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+git config --global core.autocrlf input
+git config --global core.excludesfile ~/.gitignore_global
 ```
