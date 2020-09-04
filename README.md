@@ -148,3 +148,12 @@ Name=New Empty Window
 Exec=/usr/bin/toolbox run -c main code --no-sandbox --new-window %F
 Icon=com.visualstudio.code
 ```
+
+
+### Configuring Git
+
+```
+git config --global core.editor "subl -n -w"
+git config --global user.name "Name"
+git config --global user.email "email"
+```
