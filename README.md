@@ -130,7 +130,10 @@ sudo gedit /etc/fstab
 ```
 
 ### Preferring Chinese Fonts to Japanese Fonts
-
+```
+sudo apt install ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
+sudo fc-cache -f -v
+```
 ##### **`/etc/fonts/conf.d/64-language-selector-prefer.conf`**
 
 ```xml
