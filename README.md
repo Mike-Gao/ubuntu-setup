@@ -7,7 +7,7 @@ sudo apt autoremove
 sydo apt install python3
 sudo apt install python-is-python3
 sudo apt install python3-pip
-sudo apt install curl clang neovim git
+sudo apt install curl clang neovim git gcc
 sudo apt install ubuntu-restricted-extras
 sudo apt install openjdk-14-jdk
 sudo apt install emacs
@@ -30,6 +30,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 #### Non-Official
 ```
 sudo snap installzoom-client
+sudo apt install alsa-ucm-conf
 ```
 #### Python Stuff
 ````
@@ -63,11 +64,25 @@ sudo apt-get install typora
 ````
 #### Matlab
 ```
-sudo apt install canberra-gtk-module
+sudo apt install install matlab-support
 ```
+#### Shell Stuff
+```
+sudo apt install fonts-powerline
+```
+#### Vulkan Stuff
+````
+sudo apt install vulkan-utils
+wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+sudo apt update
+sudo apt install vulkan-sdk
+sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.2.148-focal.list https://packages.lunarg.com/vulkan/1.2.148/lunarg-vulkan-1.2.148-focal.list
+sudo apt-get update
+sudo apt install libvulkan1 libvulkan1:i386
+sudo apt install libvulkan-dev
+````
 
 ### Disable Grub Screen
-
 ##### **`/etc/default/grub`**
 ```apacheconf
 # If you change this file, run 'update-grub' afterwards to update
