@@ -15,12 +15,18 @@ sudo apt install dino-im vim
 sudo apt install language-pack-zh*
 sudo apt install evolution evolution-ews
 sudo apt install seahorse-nautilus
+sudo apt install gnome-boxes
+sudo apt install mpv
+sudo apt install celluloid
+sudo snap install lxd
+sudo snap install meshlab
 sudo snap install foliate
 sudo snap install discord
 sudo snap install simplenote
 sudo snap install gimp
 sudo snap install inkscape
 sudo snap install blender
+sudo snap install valgrind --classic
 sudo snap install sublime-text --classic
 sudo snap install pycharm-professional --classic
 sudo snap install clion --classic
