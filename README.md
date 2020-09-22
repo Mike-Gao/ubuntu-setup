@@ -9,6 +9,16 @@ sudo apt-get install dino-im vim
 sudo apt-get install language-pack-zh*
 sudo apt-get install evolution evolution-ews
 sudo apt install seahorse-nautilus
+sudo snap install foliate
+sudo snap install discord
+sudo snap install simplenote
+sudo snap install gimp
+sudo snap install inkscape
+sudo snap install blender
+sudo snap install sublime-text --classic
+sudo snap install pycharm-professional --classic
+sudo snap install clion --classic
+sudo snap install intellij-idea-ultimate --classic
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 #### Signal
