@@ -127,7 +127,6 @@ sudo update-grub
 ```
 
 ### Pinyin Input
-
 ```
 sudo apt-get install ibus-rime
 ibus restart
@@ -135,7 +134,6 @@ ibus engine rime
 ```
 
 ### Configure Swap
-
 ```
 sudo swapoff -a
 sudo fallocate -l 8G /swapfile
@@ -150,7 +148,6 @@ sudo apt install ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-
 sudo fc-cache -f -v
 ```
 ##### **`/etc/fonts/conf.d/64-language-selector-prefer.conf`**
-
 ```xml
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
@@ -190,7 +187,6 @@ sudo fc-cache -f -v
 ```
 
 ### Adding Desktop Shortcut
-
 Place `.desktop` in `~/.local/share/applications`
 ```apacheconf
 [Desktop Entry]
@@ -213,9 +209,7 @@ Exec=/usr/bin/toolbox run -c main code --no-sandbox --new-window %F
 Icon=com.visualstudio.code
 ```
 
-
 ### Configuring Git
-
 ```
 git config --global core.editor "subl -n -w"
 git config --global user.name "Mike Gao"
@@ -226,4 +220,8 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 git config --global core.autocrlf input
 git config --global core.excludesfile ~/.gitignore_global
+```
+### Restart MOK Key Enrollment Process
+```
+sudo update-secureboot-policy --enroll-key
 ```
