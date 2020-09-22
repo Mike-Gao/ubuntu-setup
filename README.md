@@ -3,15 +3,25 @@
 ### Packages to Install
 ```
 sudo apt-get update
+sudo apt autoremove
+sudo apt install openjdk-14-jdk
 sudo apt-get install dino-im vim
 sudo apt-get install language-pack-zh*
 sudo apt-get install evolution evolution-ews
+sudo apt install seahorse-nautilus
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 #### Signal
 ```
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 sudo apt update && sudo apt install signal-desktop
+```
+#### Discord
+```
+snap connect discord:process-control
+snap connect discord:system-observe
+snap connect discord:unity7 :unity7
 ```
 #### Keybase
 ```
