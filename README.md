@@ -1,9 +1,5 @@
 # Mike's Ubuntu Setup Scripts
 
-### Non-Official
-```
-sudo snap installzoom-client
-```
 ### Packages to Install
 ```
 sudo apt-get update
@@ -30,6 +26,10 @@ sudo snap install pycharm-professional --classic
 sudo snap install clion --classic
 sudo snap install intellij-idea-ultimate --classic
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+#### Non-Official
+```
+sudo snap installzoom-client
 ```
 #### Python Stuff
 ````
