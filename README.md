@@ -1,13 +1,23 @@
 # Mike's Ubuntu Setup Scripts
 
+### Non-Official
+```
+sudo snap installzoom-client
+```
 ### Packages to Install
 ```
 sudo apt-get update
 sudo apt autoremove
+sydo apt install python3
+sudo apt install python-is-python3
+sudo apt install python3-pip
+sudo apt install curl clang neovim git
+sudo apt install ubuntu-restricted-extras
 sudo apt install openjdk-14-jdk
-sudo apt-get install dino-im vim
-sudo apt-get install language-pack-zh*
-sudo apt-get install evolution evolution-ews
+sudo apt install emacs
+sudo apt install dino-im vim
+sudo apt install language-pack-zh*
+sudo apt install evolution evolution-ews
 sudo apt install seahorse-nautilus
 sudo snap install foliate
 sudo snap install discord
@@ -21,6 +31,12 @@ sudo snap install clion --classic
 sudo snap install intellij-idea-ultimate --classic
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
+#### Python Stuff
+````
+python -m pip install ptpython
+python -m pip install scipy matplotlib virtualenv
+python -m pip install torch torchvision
+````
 #### Signal
 ```
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
@@ -38,6 +54,16 @@ snap connect discord:unity7 :unity7
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install ./keybase_amd64.deb
 run_keybase
+```
+#### Typora
+````
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+sudo apt-get install typora
+````
+#### Matlab
+```
+sudo apt install canberra-gtk-module
 ```
 
 ### Disable Grub Screen
