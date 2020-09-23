@@ -231,3 +231,7 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 sudo update-secureboot-policy --enroll-key
 ```
+### Properly Remove Stuff
+```
+sudo apt-get autoremove -o APT::Autoremove::SuggestsImportant=0 --purge
+```
