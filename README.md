@@ -238,3 +238,7 @@ sudo update-secureboot-policy --enroll-key
 ```
 sudo apt-get autoremove -o APT::Autoremove::SuggestsImportant=0 --purge
 ```
+### Useful Git Commands
+```
+find . -type f -size +100M
+```
