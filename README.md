@@ -8,6 +8,7 @@ sydo apt install python3
 sudo apt install python-is-python3
 sudo apt install python3-pip
 sudo apt install curl clang neovim git gcc
+sudo apt install git-lfs
 sudo apt install ubuntu-restricted-extras
 sudo apt install openjdk-14-jdk
 sudo apt install emacs
@@ -241,4 +242,5 @@ sudo apt-get autoremove -o APT::Autoremove::SuggestsImportant=0 --purge
 ### Useful Git Commands
 ```
 find . -type f -size +100M
+git lfs track "*.lib"
 ```
